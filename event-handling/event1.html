@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+
+<body>
+    <h1 class="text-4xl bg-cyan-400 text-white">welcome to full stack web devlopment</h1>
+    <input type="text" id="inputField" placeholder="Type something...">
+    <button id="submitButton" onclick="handleclick()" class="rounded bg-emerald-300">Submit</button>
+    <p id="input"></p>
+    <button id="countButton" onclick="count()" class="rounded bg-emerald-300">coount</button>
+    <p id="output"></p>
+    <input type="text" id="inputField1" placeholder="Type something..." class="rounded bg-emerald-300"
+        oninput="liveCount()">
+
+    <p id="output1"></p>
+
+
+</body>
+<script>
+
+    function handleclick() {
+        let input = document.getElementById("inputField").value
+        if (input == "") {
+            alert("enter the text");
+        }
+        else {
+            document.getElementById("input").innerHTML = " hello" + " " + input;
+        }
+    }
+
+    const count = () => {
+        let input = document.getElementById("inputField").value.length;
+        document.getElementById("output").innerHTML = "Count: " + input;
+    }
+
+    function liveCount() {
+        let length = document.getElementById("inputField1").value.length;
+        document.getElementById("output1").innerHTML = "Live Count: " + length;
+    }
+
+</script>
+
+</html>

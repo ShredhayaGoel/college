@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+
+<body>
+    <h1 id="1" class="text-4xl bg-blue-500 text-white font-bold"> Welcome to full stack development!</h1>
+    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"">Click
+        Me!</button>
+    <h1 id=" 2" class="text-4xl bg-blue-500 text-white font-bold"> Welcome to full stack developm
+        onclick="onClick()ent!</h1>
+        <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" onclick="onClick()">Click
+            Me!</button>
+</body>
+<script>
+    console.log("Hello, World!");
+    function onClick() {
+        document.getElementById("1").innerHTML = "You clicked the button!";
+    }
+    function onClick() {
+        document.getElementById("2").innerHTML = "You clicked the second button!";
+    }
+</script>
+
+</html>
