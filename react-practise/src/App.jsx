@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "./components/card";
 import Card2 from "./components/card2";
+import Photogallery from "./components/photogallery";
 const App = () => {
   const jobs = [
     {
@@ -124,8 +125,12 @@ const App = () => {
     },
   ];
   return (
-    <div className="parent">
-      {jobs.map(function (elem) {
+    <div>
+      <Photogallery />
+    </div>
+    /* 
+    
+    <div className="parent"> {jobs.map(function (elem) {
         return (
           <Card2
             companyLogo={elem.companyLogo}
@@ -139,7 +144,7 @@ const App = () => {
           />
         );
       })}
-    </div>
+      */
   );
 };
 
