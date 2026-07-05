@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+}
+
+body {
+  background: #f3f3f3;
+}
+
+/* Parent */
+
+.parent {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 40px;
+}
+
+/* Card */
+
+.card {
+  width: 280px;
+  background: white;
+  border-radius: 22px;
+  padding: 22px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+}
+
+/* Top */
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+}
+
+.save-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 8px 12px;
+
+  border: none;
+
+  background: #f1f1f1;
+
+  border-radius: 8px;
+
+  cursor: pointer;
+}
+
+/* Company */
+
+.company {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  margin-top: 20px;
+}
+
+.company h4 {
+  font-size: 18px;
+}
+
+.company span {
+  color: gray;
+  font-size: 14px;
+}
+
+/* Job */
+
+.job-title {
+  margin-top: 12px;
+  font-size: 28px;
+}
+
+/* Tags */
+
+.tags {
+  display: flex;
+  gap: 10px;
+  margin: 18px 0;
+}
+
+.tags span {
+  background: #f1f1f1;
+  padding: 6px 10px;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+/* Divider */
+
+hr {
+  margin: 22px 0;
+  border: 0.5px solid #ddd;
+}
+
+/* Bottom */
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.bottom h3 {
+  font-size: 24px;
+}
+
+.bottom p {
+  color: gray;
+  margin-top: 5px;
+  font-size: 14px;
+}
+
+.apply-btn {
+  background: #111;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
