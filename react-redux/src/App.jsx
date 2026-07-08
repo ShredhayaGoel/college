@@ -21,6 +21,8 @@ export default function App() {
 */
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import Audioplayer from "./audio";
+import Student from "./components/student";
 
 function App() {
   const [employees, setEmployees] = useState([]);
@@ -57,9 +59,11 @@ function App() {
 
     fetchEmployees();
   }, []);
-
+  const [view, setView] = useState(true);
   return (
     <div className="container">
+      <button onClick={() => setView(!view)}> Toggle </button>
+      {view ? <h1>Student Information</h1> : null}
       <h1>Employees List</h1>
 
       <div className="cards">
@@ -94,6 +98,8 @@ function App() {
           </div>
         ))}
       </div>
+      <Audioplayer />
+      <Student />
     </div>
   );
 }
